@@ -1,3 +1,3 @@
 class Story < ApplicationRecord
-  validates :name, length: {minimum: 5}, allow_blank: false
+  validates :name, length: {minimum: 2}, allow_blank: false
 end

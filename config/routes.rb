@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :stories
-  
+  resources :stories, except: [:update, :destroy, :edit]
+  root to: "stories#index"
   namespace :admin do
     root to: "stories#index"
     resources :stories
