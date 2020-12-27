@@ -4,9 +4,9 @@ class CreateStories < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :city
       t.integer :age
-      t.text :content
-      t.boolean :allow_public_read
-      t.boolean :is_public
+      t.text :content, null: false
+      t.boolean :allow_public_read, default: true
+      t.boolean :is_public, default: false
 
       t.timestamps
     end

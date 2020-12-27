@@ -9,6 +9,8 @@
       <th>City</th>
       <th>Age</th>
       <th>Content</th>
+      <th>Allow public read</th>
+      <th>Published?</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,12 +22,12 @@
       <td><%= story.city %></td>
       <td><%= story.age %></td>
       <td><%= story.content %></td>
-      <td><%= link_to 'Show', story %></td>
+      <td><%= story.allow_public_read %></td>
+      <td><%= story.is_published %></td>
+      <td><%= link_to 'Show', admin_story_path(story) %></td>
+      <td><%= link_to 'Edit', edit_admin_story_path(story) %></td>
+      <td><%= link_to 'Destroy', admin_story_path(story), method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Story', new_story_path %>
