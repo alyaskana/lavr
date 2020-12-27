@@ -1,31 +1,134 @@
-<p id="notice"><%= notice %></p>
+<div class="first-screen">
+  <header>
+    <div class="logo">
+      <a href="">ЛАВР</a>
+    </div>
+    <div class="menu">
+      <a href="">О ПРОЕКТЕ</a>
+      <a href="">EVENT</a>
+      <a href="">ИСТОРИИ</a>
+    </div>
+  </header>
+  <div class="text">
+    ЛАВР
+  </div>
+</div>
+<div>
+  <section class='about'>
+    <div class="content-wrapper">
+      <h2>
+        Не ходи за мной
+      </h2>
+      <p>
+        Истории девушек, столкнувшихся со сталкингом — навязчивым преследованием в жизни или соц сетях. Равным образом новая модель организационной деятельности требуют от нас анализа систем массового участия. Товарищи! постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке систем массового участия.
+      </p>
+      <div class="btn-wrap">
+        <a href="" class="btn">
+          Поделиться
+        </a>
+      </div>
+    </div>
+  </section>
 
-<h1>Stories</h1>
+  <section class="event black-bg">
+    <div class="content-wrapper">
+      <h2>
+        Лавр event
+      </h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>City</th>
-      <th>Age</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <p>
+        Приходите на наше благотворительное мероприятие, посвященное жертвам преследования. Мы там зачитаем некоторые из опубликованных на сайте историй, будем продавать мерч, а все вырученные деньги пойдут в фонд «Название фонда».
+      </p>
+      <p class="bold">
+        Вы также можете поддержать нас на <a href="">краудфандинговой площадке</a>
+      </p>
 
-  <tbody>
-    <% @stories.each do |story| %>
-    <tr>
-      <td><%= story.name %></td>
-      <td><%= story.city %></td>
-      <td><%= story.age %></td>
-      <td><%= story.content %></td>
-      <td><%= link_to 'Show', story %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+      <div class="register">
+        <div>
+          <div class="title">
+            Дата и время
+          </div>
+          <div class="info">
+            7 ноября 2020, 19:00
+          </div>
+        </div>
+        <div class="line"></div>
+        <div>
+          <div class="title">
+            Место
+          </div>
+          <div class="info">
+            ул. Малая Пионерская 12, ст. 1
+          </div>
+        </div>
+        <div class="line"></div>
+        <a href="" class="btn">
+          Записаться
+        </a>
+      </div>
+    </div>
+  </section>
 
-<br>
+  <section class="stories">
+    <div class="content-wrapper">
+      <h2>
+        Истории
+      </h2>
+      <p>
+        Множество девушек сталкивались с&nbsp;преследованием, однако в&nbsp;обществе не&nbsp;принято публично рассказывать об&nbsp;этом. Мы&nbsp;хотим придать огласку этой проблеме, поэтому если вам есть что рассказать, вы&nbsp;можете помочь нам и&nbsp;поделиться своей историей (можно анонимно).
+      </p>
+      <div class="btn-wrap">
+        <a href="" class="btn">
+          Поделиться
+        </a>
+      </div>
 
-<%= link_to 'New Story', new_story_path %>
+      <div class="stories-block">
+        <div class="story">
+          <div class="text">
+            В 2014 года заметила, что незнакомый мужчина ставит лайки её фотографиям во «ВКонтакте». Позже он стал писать ей сообщения — отправлять песни и безобидные комплименты.
+            Такое часто бывало и с другими мужчинами в соцсетях, поэтому я не обратила на это особого внимания. Я отвечала на его сообщения, потому что они были совсем не опасными, он ни на что не намекал, это превратилось даже в лёгкую дружбу в интернете. Потом он предложил встретиться и попить кофе, я согласилась...
+          </div>
+          <div class="show">
+            Показать полностью...
+          </div>
+          <div class="author">
+            Анонимно
+          </div>
+        </div>
+
+        <div class="story right">
+          <div class="text">
+            Потом он предложил встретиться и попить кофе, я согласилась, в первые же минуты поняла, что встреча была ошибкой — мужчина был настойчив, принес цветы да и вообще не понравился ей в личном общении. Спустя 10 минут я засобиралась домой, сославшись на срочные дела. Он начал обрывать телефоны, писать бесконечно сообщения. Я написала ему, что, мол, давайте прекратим общение, извинилась за то, что могла дать какую-то надежду на романтические отношения. Но это не помогло, он...
+          </div>
+          <div class="show">
+            Показать полностью...
+          </div>
+          <div class="author">
+            Соня, 19 лет, Москва
+          </div>
+        </div>
+
+        <div class="btn-wrap">
+          <a href="" class="btn">
+            Все истории
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="black-bg">
+    <div class="content-wrapper">
+      <div class="text">
+        Спасибо нашим партнерам:
+      </div>
+      <div class="opia">
+        <%= image_tag  "opia_LOGO-17-white.png", class: "opia-img" %>
+      </div>
+      <div class="postpictures">
+        <%= image_tag  "post-logo-white-alpha.svg", class: "postpictures-img" %>
+      </div>
+    </div>
+  </footer>
+</div>

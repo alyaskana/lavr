@@ -13,3 +13,231 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: 'Proxima Nova';
+
+  * {
+    color: #111111;
+  }
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.first-screen {
+  background-image: url('bg.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+
+  header {
+    font-family: 'Wremena';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    * {
+      color: white;
+      letter-spacing: 0.3em;
+      line-height: 24px;
+      font-weight: 700;
+    }
+
+    .logo {
+      font-size: 24px;
+    }
+
+    .menu a {
+      padding-left: 70px;
+      font-size: 16px;
+    }
+  }
+
+  .text {
+    font-size: 90px;
+    letter-spacing: 0.34em;
+    color: white;
+    margin: 0 auto;
+  }
+}
+
+h2 {
+  font-family: 'Wremena';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #111111;
+}
+
+p {
+  max-width: 750px;
+  margin: 0 auto 30px auto;
+  font-size: 18px;
+  line-height: 140%;
+  color: #111111;
+}
+
+.btn-wrap {
+  text-align: center;
+}
+
+.btn {
+  color: #111111;
+  cursor: pointer;
+  font-family: 'Wremena';
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border: 2px solid #111111;
+  box-sizing: border-box;
+  padding: 20px 60px 15px;
+  display: inline-block;
+}
+
+.black-bg {
+  background: #2E2E2E;
+
+  * {
+    color: white;
+  }
+
+  .btn {
+    border-color: white;
+  }
+}
+
+.event {
+  .bold {
+    font-weight: 600;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .register {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    .line {
+      border-right: 2px solid #FFFFFF;
+      height: 70px;
+    }
+
+    .title {
+      font-family: Wremena;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .info {
+      font-weight: 600;
+      font-size: 22px;
+    }
+  }
+
+}
+
+.stories {
+  .story {
+    padding: 30px 40px 15px;
+    border: 2px solid #111111;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin-top: 80px;
+
+    * {
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+    .text {
+      font-style: italic;
+    }
+
+    .show {
+      margin: 10px 0 20px;
+      font-style: italic;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .author {
+      border-top: 2px solid #111111;
+      padding: 15px 20px 0 0;
+      text-align: right;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    &.right {
+      margin-left: auto;
+    }
+  }
+
+  .btn-wrap {
+    margin-top: 80px;
+  }
+}
+
+footer {
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    >div {
+      flex: 1;
+    }
+
+    .text {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .opia {
+      display: flex;
+      justify-content: center;
+
+      .opia-img {
+        max-width: 100px;
+      }
+    }
+
+    .postpictures {
+      display: flex;
+      justify-content: flex-end;
+
+      .postpictures-img {
+        max-width: 260px;
+      }
+    }
+  }
+}
