@@ -1,7 +1,7 @@
 <%= form_with(model: story, local: true) do |form| %>
 <% if story.errors.any? %>
-<div id="error_explanation">
-  <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
+<div class="error" id="error_explanation">
+  <h2>История не может быть отправлена:</h2>
 
   <ul>
     <% story.errors.full_messages.each do |message| %>
@@ -12,36 +12,31 @@
 <% end %>
 
 <div class="field">
-  <%= form.label :name %>
+  <%= form.label :Имя %>
   <%= form.text_field :name %>
 </div>
 
 <div class="field">
-  <%= form.label :city %>
+  <%= form.label :Город %>
   <%= form.text_field :city %>
 </div>
 
 <div class="field">
-  <%= form.label :age %>
+  <%= form.label :'Сколько вам лет?' %>
   <%= form.number_field :age %>
 </div>
 
 <div class="field">
-  <%= form.label :content %>
+  <%= form.label :'Ваша история' %>
   <%= form.text_area :content %>
 </div>
 
 <div class="field">
-  <%= form.label :allow_public_read %>
   <%= form.check_box :allow_public_read %>
-</div>
-
-<div class="field">
-  <%= form.label :is_published %>
-  <%= form.check_box :is_published %>
+  <%= form.label :'Я разрешаю вам зачитать мою историю на ЛАВР EVENT' %>
 </div>
 
 <div class="actions">
-  <%= form.submit %>
+  <%= form.submit value='Отправить'%>
 </div>
 <% end %>
