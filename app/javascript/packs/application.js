@@ -9,11 +9,10 @@ require("@rails/activestorage").start()
 require("channels")
 
 function addAutoResize() {
-  document.querySelectorAll('.text_area').forEach(function (element) {
-    console.log('++++===');
+  document.querySelectorAll('.text_area').forEach(element => {
     element.style.boxSizing = 'border-box';
-    var offset = element.offsetHeight - element.clientHeight;
-    element.addEventListener('input', function (event) {
+    let offset = element.offsetHeight - element.clientHeight;
+    element.addEventListener('input', event => {
       event.target.style.height = 'auto';
       event.target.style.height = event.target.scrollHeight + offset + 'px';
     });
