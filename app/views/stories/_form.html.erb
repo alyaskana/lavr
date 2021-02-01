@@ -1,4 +1,4 @@
-<%= form_with(model: story, local: true) do |form| %>
+<%= form_with(model: story, local: true, class: 'form') do |form| %>
 <% if story.errors.any? %>
 <div class="error" id="error_explanation">
   <h2>История не может быть отправлена:</h2>
@@ -11,32 +11,38 @@
 </div>
 <% end %>
 
-<div class="field">
-  <%= form.label :Имя %>
-  <%= form.text_field :name %>
-</div>
+<div class='form_content'>
+  <div class="form__group field">
+    <%= form.text_field :name, :class => 'form__field', :placeholder => 'Имя' %>
 
-<div class="field">
-  <%= form.label :Город %>
-  <%= form.text_field :city %>
-</div>
+    <div class='form__label'><%= form.label :Имя %></div>
+  </div>
 
-<div class="field">
-  <%= form.label :'Сколько вам лет?' %>
-  <%= form.number_field :age %>
-</div>
+  <div class="form__group field">
+    <%= form.text_field :city, :class => 'form__field', :placeholder => 'Город' %>
 
-<div class="field">
-  <%= form.label :'Ваша история' %>
-  <%= form.text_area :content %>
-</div>
+    <div class='form__label'><%= form.label :Город %></div>
+  </div>
 
-<div class="field">
-  <%= form.check_box :allow_public_read %>
-  <%= form.label :'Я разрешаю вам зачитать мою историю на ЛАВР EVENT' %>
-</div>
+  <div class="form__group field">
+    <%= form.text_field :age, :class => 'form__field', :placeholder => 'Сколько вам лет?' %>
 
-<div class="actions">
-  <%= form.submit value='Отправить'%>
+    <div class='form__label'><%= form.label :'Сколько вам лет?' %></div>
+  </div>
+
+  <div class="form__group field">
+    <%= form.text_area :content, :class => 'form__field text_area', :placeholder => 'Ваша история' %>
+
+    <div class='form__label'><%= form.label :'Ваша история' %></div>
+  </div>
+
+  <div class="field">
+    <%= form.check_box :allow_public_read %>
+    <%= form.label :'Я разрешаю вам зачитать мою историю на ЛАВР EVENT', :class => 'checkbox_text' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit value='Отправить', :class => 'btn' %>
+  </div>
 </div>
 <% end %>

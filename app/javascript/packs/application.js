@@ -8,6 +8,19 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+function addAutoResize() {
+  document.querySelectorAll('.text_area').forEach(function (element) {
+    console.log('++++===');
+    element.style.boxSizing = 'border-box';
+    var offset = element.offsetHeight - element.clientHeight;
+    element.addEventListener('input', function (event) {
+      event.target.style.height = 'auto';
+      event.target.style.height = event.target.scrollHeight + offset + 'px';
+    });
+  });
+}
+
+addAutoResize()
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
