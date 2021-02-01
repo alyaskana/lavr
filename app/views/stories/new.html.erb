@@ -1,5 +1,9 @@
-<div class='new_story'>
-  <h2>Поделись своей историей</h2>
+<div class='new_story black-bg'>
+  <%= render 'header' %>
 
-  <%= render 'form', story: @story %>
+  <div class='content-wrapper'>
+    <h2 class='main_header'>Поделись своей историей</h2>
+
+    <%= render 'form', story: @story%>
+  </div>
 </div>

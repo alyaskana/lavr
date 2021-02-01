@@ -1,0 +1,30 @@
+header {
+  font-family: 'Wremena';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+
+  * {
+    letter-spacing: 0.3em;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .logo a {
+    font-size: 24px;
+    color: white;
+  }
+
+  .menu a {
+    padding-left: 70px;
+    font-size: 16px;
+    color: white;
+  }
+}

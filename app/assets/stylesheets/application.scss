@@ -14,13 +14,14 @@
  *= require_self
  */
 
+
 body {
   font-family: 'Proxima Nova';
-
-  * {
-    color: #111111;
-  }
+  color: #111111;
 }
+
+@import './header.scss';
+
 
 .content-wrapper {
   max-width: 1200px;
@@ -40,35 +41,6 @@ a {
   display: flex;
   align-items: center;
 
-  header {
-    font-family: 'Wremena';
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-
-    * {
-      color: white;
-      letter-spacing: 0.3em;
-      line-height: 24px;
-      font-weight: 700;
-    }
-
-    .logo {
-      font-size: 24px;
-    }
-
-    .menu a {
-      padding-left: 70px;
-      font-size: 16px;
-    }
-  }
-
   .text {
     font-size: 90px;
     letter-spacing: 0.34em;
@@ -79,7 +51,7 @@ a {
   }
 }
 
-h2 {
+.main_header {
   font-family: 'Wremena';
   font-weight: bold;
   font-size: 48px;
@@ -116,17 +88,24 @@ p {
   box-sizing: border-box;
   padding: 20px 60px 15px;
   display: inline-block;
+  background-color: transparent;
 }
 
 .black-bg {
   background: #2E2E2E;
 
-  * {
+  p,
+  a {
     color: white;
   }
 
   .btn {
     border-color: white;
+    color: white;
+  }
+
+  .main_header {
+    color: white;
   }
 }
 
@@ -156,11 +135,13 @@ p {
       letter-spacing: 0.05em;
       text-transform: uppercase;
       margin-bottom: 15px;
+      color: white;
     }
 
     .info {
       font-weight: 600;
       font-size: 22px;
+      color: white;
     }
   }
 
@@ -222,6 +203,7 @@ footer {
     .text {
       font-weight: 600;
       font-size: 18px;
+      color: white;
     }
 
     .opia {
