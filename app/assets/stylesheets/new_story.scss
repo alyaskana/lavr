@@ -84,8 +84,12 @@
         overflow: hidden;
       }
 
-      .checkbox_text {
-        line-height: 130%;
+      .checkbox {
+        margin-top: 25px;
+
+        &_text {
+          line-height: 130%;
+        }
       }
 
       .btn {

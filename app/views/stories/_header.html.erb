@@ -3,8 +3,8 @@
     <a href="/">ЛАВР</a>
   </div>
   <div class="menu">
-    <a href="#about">О ПРОЕКТЕ</a>
-    <a href="#event">EVENT</a>
-    <a href="#stories">ИСТОРИИ</a>
+    <%= link_to "О ПРОЕКТЕ", root_path(anchor: 'about'), class: 'menu_item' %>
+    <%= link_to "EVENT", root_path(anchor: 'event'), class: 'menu_item' %>
+    <%= link_to "ИСТОРИИ", root_path(anchor: 'stories'), class: 'menu_item' %>
   </div>
 </header>
