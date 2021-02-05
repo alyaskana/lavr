@@ -12,32 +12,32 @@
 <% end %>
 
 <div class="field">
-  <%= form.label :name %>
+  <%= form.label :name, 'Имя' %>
   <%= form.text_field :name %>
 </div>
 
 <div class="field">
-  <%= form.label :city %>
+  <%= form.label :city, 'Город' %>
   <%= form.text_field :city %>
 </div>
 
 <div class="field">
-  <%= form.label :age %>
+  <%= form.label :age, 'Возраст' %>
   <%= form.number_field :age %>
 </div>
 
 <div class="field">
-  <%= form.label :content %>
+  <%= form.label :content, 'История' %>
   <%= form.text_area :content %>
 </div>
 
 <div class="field">
-  <%= form.label :allow_public_read %>
+  <%= form.label :allow_public_read, 'Можно прочитать на ивенте:' %>
   <%= form.check_box :allow_public_read %>
 </div>
 
 <div class="field">
-  <%= form.label :is_published %>
+  <%= form.label :is_published, 'Опубликовано' %>
   <%= form.check_box :is_published %>
 </div>
 
