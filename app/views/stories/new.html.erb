@@ -8,3 +8,13 @@
   </div>
   <%= render 'footer' %>
 </div>
+<% if notice %>
+<div class='popup_wrapper'>
+  <div class="popup">
+    <div class="popup_content">
+      <%= notice %>
+      <%= link_to "Ок", new_story_path, class: 'btn' %>
+    </div>
+  </div>
+</div>
+<% end %>

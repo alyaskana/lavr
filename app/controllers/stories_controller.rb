@@ -23,7 +23,7 @@ class StoriesController < ApplicationController
     @story = Story.new(story_params)
 
     if @story.save
-      redirect_to @story, notice: 'Story was successfully created.'
+      redirect_to new_story_path, notice: 'Спасибо за вашу историю! Скоро мы ее проверим и опубликуем.'
     else
       render :new
     end
