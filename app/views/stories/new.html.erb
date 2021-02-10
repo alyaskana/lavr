@@ -1,13 +1,14 @@
 <div class='new_story black-bg'>
-  <%= render 'header' %>
+  <%= render 'common/header' %>
 
   <div class='content-wrapper'>
     <h2 class='main_header'>Поделись своей историей</h2>
 
     <%= render 'form', story: @story%>
   </div>
-  <%= render 'footer' %>
+  <%= render 'common/footer' %>
 </div>
+
 <% if notice %>
 <div class='popup_wrapper'>
   <div class="popup">

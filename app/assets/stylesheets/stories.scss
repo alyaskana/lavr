@@ -1,3 +1,85 @@
 // Place all the styles related to the Stories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.stories {
+  .stories-block {
+    margin-top: 80px;
+  }
+
+  .story {
+    padding: 30px 40px 15px;
+    border: 2px solid #111111;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin-top: 80px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    * {
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+    .text {
+      font-style: italic;
+
+      &.-with_margin {
+        margin-bottom: 20px;
+      }
+    }
+
+    .show {
+      margin: 10px 0 20px;
+      font-style: italic;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .author {
+      border-top: 2px solid #111111;
+      padding: 15px 20px 0 0;
+      text-align: right;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    &.right {
+      margin-left: auto;
+    }
+  }
+
+  .btn-wrap {
+    margin-top: 80px;
+  }
+}
+
+.pagination {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Proxima Nova';
+  font-size: 24px;
+
+  span {
+    padding-right: 10px;
+
+    a {
+      color: #888888;
+
+      &:hover {
+        color: #111111;
+      }
+    }
+  }
+
+  .page {
+    font-size: 18px;
+
+    .current {
+      color: #111111;
+    }
+  }
+
+}

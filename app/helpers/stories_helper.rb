@@ -1,8 +1,8 @@
 module StoriesHelper
   def author_info(story)
-    name = story.name ? story.name : 'Анонимно'
-    age = story.age ? ", #{story.age}" : ''
-    city = story.city ? ", #{story.city}" : ''
+    name = story.name.present? ? story.name : 'Анонимно'
+    age = story.age.present? ? ", #{story.age}" : ''
+    city = story.city.present? ? ", #{story.city}" : ''
     name + age + city
   end
 end

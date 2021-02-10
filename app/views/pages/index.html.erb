@@ -1,0 +1,99 @@
+<div class="first-screen">
+  <%= render 'common/header' %>
+  <div class="text">
+    ЛАВР
+  </div>
+</div>
+<div>
+  <section id="about" class='about'>
+    <div class="content-wrapper">
+      <h2 class="main_header">
+        Не ходи за мной
+      </h2>
+      <p>
+        Истории девушек, столкнувшихся со сталкингом — навязчивым преследованием в жизни или соц сетях. Равным образом новая модель организационной деятельности требуют от нас анализа систем массового участия. Товарищи! постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке систем массового участия.
+      </p>
+      <div class="btn-wrap">
+        <%= link_to "Поделиться", new_story_path, class: 'btn' %>
+      </div>
+    </div>
+  </section>
+
+  <section id="event" class="event black-bg">
+    <div class="content-wrapper">
+      <h2 class="main_header">
+        Лавр event
+      </h2>
+
+      <p>
+        Приходите на наше благотворительное мероприятие, посвященное жертвам преследования. Мы там зачитаем некоторые из опубликованных на сайте историй, будем продавать мерч, а все вырученные деньги пойдут в фонд «Название фонда».
+      </p>
+      <p class="bold">
+        Вы также можете поддержать нас на <a href="">краудфандинговой площадке</a>
+      </p>
+
+      <div class="register">
+        <div>
+          <div class="title">
+            Дата и время
+          </div>
+          <div class="info">
+            7 ноября 2020, 19:00
+          </div>
+        </div>
+        <div class="line"></div>
+        <div>
+          <div class="title">
+            Место
+          </div>
+          <div class="info">
+            ул. Малая Пионерская 12, ст. 1
+          </div>
+        </div>
+        <div class="line"></div>
+        <a href="" class="btn">
+          Записаться
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="stories" class="stories">
+    <div class="content-wrapper">
+      <h2 class="main_header">
+        Истории
+      </h2>
+      <p>
+        Множество девушек сталкивались с&nbsp;преследованием, однако в&nbsp;обществе не&nbsp;принято публично рассказывать об&nbsp;этом. Мы&nbsp;хотим придать огласку этой проблеме, поэтому если вам есть что рассказать, вы&nbsp;можете помочь нам и&nbsp;поделиться своей историей (можно анонимно).
+      </p>
+      <div class="btn-wrap">
+        <%= link_to "Поделиться", new_story_path, class: 'btn' %>
+      </div>
+
+      <% @stories.each_with_index do |story, index| %>
+      <div class="stories-block">
+        <div class="story <%= index%2 == 1 ? 'right' : '' %>">
+          <div class="text">
+            <%= story.content %>
+          </div>
+          <div class="show">
+            Показать полностью...
+          </div>
+          <div class="author">
+            <%= author_info(story) %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+
+      <% if @stories.present? %>
+      <div class="btn-wrap">
+        <%= link_to "Все истории", stories_path, class: 'btn' %>
+      </div>
+    </div>
+    <% end %>
+</div>
+</section>
+
+<%= render 'common/footer' %>
+</div>
