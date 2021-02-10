@@ -70,16 +70,17 @@
         <%= link_to "Поделиться", new_story_path, class: 'btn' %>
       </div>
 
+      <% if @stories %>
       <div class="stories-block">
         <div class="story">
           <div class="text">
-            <%= @stories.last.content %>
+            <%= @stories[-2].content %>
           </div>
           <div class="show">
             Показать полностью...
           </div>
           <div class="author">
-            <%= author_info(@stories.last) %>
+            <%= author_info(@stories[-2]) %>
           </div>
         </div>
 
@@ -101,6 +102,7 @@
           </a>
         </div>
       </div>
+      <% end %>
     </div>
   </section>
 
