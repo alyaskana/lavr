@@ -1,8 +1,7 @@
 <%= form_with(url: admin_story_path, model: story, local: true) do |form| %>
 <% if story.errors.any? %>
-<div id="error_explanation">
-  <h2><%= pluralize(story.errors.count, "error") %> prohibited this story from being saved:</h2>
-
+<div class="error" id="error_explanation">
+  <h2><%= pluralize(story.errors.count, "error") %> Не получается сохранить историю:</h2>
   <ul>
     <% story.errors.full_messages.each do |message| %>
     <li><%= message %></li>
@@ -11,37 +10,38 @@
 </div>
 <% end %>
 
-<div class="field">
-  <%= form.label :name, 'Имя' %>
-  <%= form.text_field :name %>
-</div>
+<div class='form_content admin'>
+  <div class="field">
+    <div class='label'><%= form.label :name, 'Имя' %></div>
+    <%= form.text_field :name, :class => 'input' %>
+  </div>
 
-<div class="field">
-  <%= form.label :city, 'Город' %>
-  <%= form.text_field :city %>
-</div>
+  <div class="field">
+    <div class='label'><%= form.label :city, 'Город' %></div>
+    <%= form.text_field :city, :class => 'input' %>
+  </div>
 
-<div class="field">
-  <%= form.label :age, 'Возраст' %>
-  <%= form.number_field :age %>
-</div>
+  <div class="field">
+    <div class='label'><%= form.label :age, 'Возраст' %></div>
+    <%= form.number_field :age, :class => 'input' %>
+  </div>
 
-<div class="field">
-  <%= form.label :content, 'История' %>
-  <%= form.text_area :content %>
-</div>
+  <div class="field">
+    <div class='label'><%= form.label :content, 'История' %></div>
+    <%= form.text_area :content, rows: "6", :class => 'textarea' %>
+  </div>
 
-<div class="field">
-  <%= form.label :allow_public_read, 'Можно прочитать на ивенте:' %>
-  <%= form.check_box :allow_public_read %>
-</div>
+  <div class="field">
+    <div class='label inline'>Можно прочитать на&nbsp;ивенте:</div> <%= story.allow_public_read ? 'да' : 'нет' %>
+  </div>
 
-<div class="field">
-  <%= form.label :is_published, 'Опубликовано' %>
-  <%= form.check_box :is_published %>
-</div>
+  <div class="field">
+    <div class='label inline'><%= form.label :is_published, 'Опубликовано' %></div>
+    <%= form.check_box :is_published %>
+  </div>
 
-<div class="actions">
-  <%= form.submit %>
+  <div class="actions">
+    <%= form.submit  value='Сохранить', :class => 'btn' %>
+  </div>
 </div>
 <% end %>

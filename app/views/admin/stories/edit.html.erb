@@ -1,8 +1,9 @@
 <div class='admin_page content-wrapper'>
-  <h1 class='main_header'>Editing Story</h1>
+  <h1 class='main_header'>Редактировать историю</h1>
 
   <%= render 'form', story: @story %>
 
-  <%= link_to 'Show', admin_story_path(@story) %> |
-  <%= link_to 'Back', admin_stories_path %>
+  <%= link_to admin_stories_path do %>
+  <i class="fa fa-arrow-left" aria-hidden="true"> <span>Назад к историям</span> </i>
+  <% end %>
 </div>

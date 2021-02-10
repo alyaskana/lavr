@@ -5,7 +5,7 @@ class Admin::StoriesController < ApplicationController
   # GET /admin/stories
   # GET /admin/stories.json
   def index
-    @stories = Story.all
+    @stories = Story.order(id: :desc).all
   end
 
   # GET /admin/stories/1
