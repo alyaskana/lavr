@@ -70,7 +70,7 @@
         <%= link_to "Поделиться", new_story_path, class: 'btn' %>
       </div>
 
-      <% if @stories %>
+      <% if @stories.present? %>
       <div class="stories-block">
         <div class="story">
           <div class="text">
