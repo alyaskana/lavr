@@ -45,6 +45,12 @@ a {
   display: flex;
   align-items: center;
 
+  @media screen and (max-width: 767px) {
+    header {
+      display: none;
+    }
+  }
+
   .text {
     font-size: 90px;
     letter-spacing: 0.34em;
