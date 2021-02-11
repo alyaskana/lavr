@@ -1,9 +1,12 @@
 <div class='admin_page content-wrapper'>
+  <% if notice %>
+  <p id="notice" class='notice'><%= notice %></p>
+  <% end %>
   <h1 class='main_header'>Редактировать историю</h1>
 
   <%= render 'form', story: @story %>
 
   <%= link_to admin_stories_path do %>
-  <i class="fa fa-arrow-left" aria-hidden="true"> <span>Назад к историям</span> </i>
+  <i class="fa fa-arrow-left" aria-hidden="true"> <span>Назад к историям</spa> </i>
   <% end %>
 </div>

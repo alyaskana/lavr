@@ -21,7 +21,7 @@ class Admin::StoriesController < ApplicationController
   # PATCH/PUT /admin/stories/1.json
   def update
     if @story.update(story_params)
-      redirect_to admin_story_path(@story), notice: 'Story was successfully updated.'
+      redirect_to edit_admin_story_path(@story), notice: 'История успешно обновлена!'
     else
       render :edit
     end
