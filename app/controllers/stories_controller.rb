@@ -3,7 +3,7 @@ class StoriesController < ApplicationController
   # GET /stories
   # GET /stories.json
   def index
-    @stories = Story.order(id: :desc).page(params[:page]).per(5)
+    @stories = Story.where(is_published: true).order(id: :desc).page(params[:page]).per(5)
   end
 
   # GET /stories/1

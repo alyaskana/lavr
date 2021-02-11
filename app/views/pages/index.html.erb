@@ -33,7 +33,7 @@
       </p>
 
       <div class="register">
-        <div>
+        <div class='info_block'>
           <div class="title">
             Дата и время
           </div>
@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="line"></div>
-        <div>
+        <div class='info_block'>
           <div class="title">
             Место
           </div>
@@ -75,9 +75,6 @@
         <div class="story <%= index%2 == 1 ? 'right' : '' %>">
           <div class="text">
             <%= story.content %>
-          </div>
-          <div class="show">
-            Показать полностью...
           </div>
           <div class="author">
             <%= author_info(story) %>
