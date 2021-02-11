@@ -1,0 +1,36 @@
+footer {
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    >div {
+      flex: 1;
+    }
+
+    .text {
+      font-weight: 600;
+      font-size: 18px;
+      color: white;
+    }
+
+    .opia {
+      display: flex;
+      justify-content: center;
+
+      .opia-img {
+        max-width: 100px;
+      }
+    }
+
+    .postpictures {
+      display: flex;
+      justify-content: flex-end;
+
+      .postpictures-img {
+        max-width: 260px;
+      }
+    }
+  }
+}

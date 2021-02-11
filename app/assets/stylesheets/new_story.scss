@@ -2,6 +2,13 @@
   $white: #fff;
   $gray: #9b9b9b;
 
+  @media screen and (max-width: 1024px) {
+    .content-wrapper.-all-screen-height {
+      height: calc(100vh - 90px);
+      box-sizing: border-box;
+    }
+  }
+
   .form {
     color: white;
     border: 2px solid white;
