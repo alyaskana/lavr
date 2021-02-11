@@ -11,6 +11,14 @@ header {
   box-sizing: border-box;
   color: white;
 
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+
+    .menu {
+      display: none;
+    }
+  }
+
   * {
     letter-spacing: 0.3em;
     line-height: 24px;
@@ -20,6 +28,10 @@ header {
   .logo a {
     font-size: 24px;
     color: white;
+
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+    }
   }
 
   .menu_item {
