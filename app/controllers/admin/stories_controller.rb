@@ -31,7 +31,7 @@ class Admin::StoriesController < ApplicationController
   # DELETE /admin/stories/1.json
   def destroy
     @story.destroy
-    redirect_to admin_stories_url, notice: 'Story was successfully destroyed.' 
+    redirect_to admin_stories_url, notice: 'История успешно удалена' 
   end
 
   private
