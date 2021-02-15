@@ -22,7 +22,7 @@
     <% @stories.each_with_index do |story, index| %>
     <div class="stories-block">
       <div class="story <%= index%2 == 1 ? 'right' : '' %>">
-        <div class="text -with_margin">
+        <div class="text">
           <%= story.content %>
         </div>
         <div class="author">
