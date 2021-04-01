@@ -10,7 +10,15 @@ footer {
     }
 
     >div {
-      flex: 1;
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media screen and (max-width: 767px) {
+        margin-right: 0;
+      }
     }
 
     .text {
@@ -25,28 +33,34 @@ footer {
       }
     }
 
-    .opia {
-      display: flex;
-      justify-content: center;
-
+    .teatr_doc {
       @media screen and (max-width: 767px) {
         margin-bottom: 20px;
       }
 
-      .opia-img {
-        max-width: 100px;
+      &_img {
+        width: 100%;
+        max-width: 120px;
+      }
+    }
 
-        @media screen and (max-width: 767px) {
+    .opia {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+
+        &_img {
           max-width: 70px;
         }
+      }
+
+      &_img {
+        max-width: 100px;
+        width: 100%;
       }
     }
 
     .postpictures {
-      display: flex;
-      justify-content: flex-end;
-
-      .postpictures-img {
+      &_img {
         max-width: 260px;
 
         @media screen and (max-width: 767px) {
@@ -54,5 +68,6 @@ footer {
         }
       }
     }
+
   }
 }
