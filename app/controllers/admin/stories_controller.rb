@@ -1,5 +1,5 @@
 class Admin::StoriesController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "RRTbGqjJ"
+  http_basic_authenticate_with name: Settings.basic_auth_user, password: Settings.basic_auth_password
   before_action :set_story, only: [:show, :edit, :update, :destroy]
 
   # GET /admin/stories
