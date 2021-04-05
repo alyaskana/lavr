@@ -36,13 +36,18 @@
     <div class='form__label'><%= form.label :content, 'Ваша история' %></div>
   </div>
 
-  <div class="field checkbox">
-    <%= form.check_box :allow_public_read %>
-    <%= form.label :allow_public_read, 'Я разрешаю вам зачитать мою историю на ЛАВР EVENT', :class => 'checkbox_text' %>
-  </div>
-
   <div class="actions">
+    <input class='btn' type="button" value="Отправить" onclick="this.parentNode.submit();">
+    <%
+=begin%>
+    <input class='btn' type="button" value="Отправить" onclick="this.parentNode.submit();">
+    <%
+=end%>
+    <%
+=begin%>
     <%= form.submit value='Отправить', :class => 'btn' %>
+    <%
+=end%>
   </div>
 </div>
 <% end %>
