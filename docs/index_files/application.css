@@ -1,0 +1,964 @@
+.admin_page.content-wrapper {
+  padding-top: 50px
+}
+
+.admin_page a {
+  color: inherit
+}
+
+.admin_page table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 15px
+}
+
+.admin_page table thead {
+  font-weight: bold;
+  font-size: 14px;
+  background-color: lightgrey
+}
+
+.admin_page table th,
+.admin_page table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd
+}
+
+.admin_page table tbody tr:hover {
+  background-color: #f5f5f5
+}
+
+.admin_page .fa {
+  font-size: 18px
+}
+
+.admin_page .fa span {
+  font-family: 'Proxima Nova'
+}
+
+.admin.form_content .btn {
+  display: block;
+  margin: 20px auto
+}
+
+.admin.form_content .field {
+  margin-bottom: 15px;
+  font-size: 18px
+}
+
+.admin.form_content .field .label,
+.admin.form_content .field .input,
+.admin.form_content .field .textarea {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 36px;
+  font-family: "Proxima Nova"
+}
+
+.admin.form_content .field .input,
+.admin.form_content .field .textarea {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding-left: 5px;
+  outline: none
+}
+
+.admin.form_content .field .textarea {
+  resize: none
+}
+
+.admin.form_content .field .input:focus,
+.admin.form_content .field .textarea:focus {
+  border: 1px solid #949494
+}
+
+.admin.form_content .field .label {
+  font-weight: bold
+}
+
+.admin.form_content .field .label.inline {
+  display: inline
+}
+
+@font-face {
+  font-family: 'Wremena';
+  src: url(WremenaBold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Wremena';
+  src: url(WremenaRegular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(ProximaNova-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(ProximaNova-RegularIt.woff) format("woff");
+  font-weight: 400;
+  font-style: italic
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(ProximaNova-Semibold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(ProximaNova-SemiboldIt.woff) format("woff");
+  font-weight: 600;
+  font-style: italic
+}
+
+footer .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper {
+    flex-direction: column
+  }
+}
+
+footer .content-wrapper>div {
+  margin-right: 40px
+}
+
+footer .content-wrapper>div:last-child {
+  margin-right: 0
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper>div {
+    margin-right: 0
+  }
+}
+
+footer .content-wrapper .text {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  line-height: 120%
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper .text {
+    font-size: 16px;
+    margin-bottom: 20px
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper .teatr_doc {
+    margin-bottom: 20px
+  }
+}
+
+footer .content-wrapper .teatr_doc_img {
+  width: 100%;
+  max-width: 120px
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper .opia {
+    margin-bottom: 20px
+  }
+
+  footer .content-wrapper .opia_img {
+    max-width: 70px
+  }
+}
+
+footer .content-wrapper .opia_img {
+  max-width: 100px;
+  width: 100%
+}
+
+footer .content-wrapper .postpictures_img {
+  max-width: 260px
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper .postpictures_img {
+    max-width: 200px
+  }
+}
+
+header {
+  font-family: 'Wremena';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: white
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    padding: 20px
+  }
+
+  header .menu {
+    display: none
+  }
+}
+
+header * {
+  letter-spacing: 0.3em;
+  line-height: 24px;
+  font-weight: 700
+}
+
+header .logo a {
+  font-size: 24px;
+  color: white
+}
+
+@media screen and (max-width: 767px) {
+  header .logo a {
+    font-size: 18px
+  }
+}
+
+header .menu_item {
+  padding-left: 70px;
+  font-size: 16px;
+  color: white
+}
+
+@media screen and (max-width: 1024px) {
+  header .menu_item {
+    padding-left: 30px
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .new_story {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+  }
+}
+
+.new_story .form {
+  color: white;
+  border: 2px solid white;
+  box-sizing: border-box;
+  padding: 20px
+}
+
+.new_story .form .form_content {
+  max-width: 800px;
+  margin: 0 auto
+}
+
+.new_story .form .form_content .form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin: 0 auto 16px
+}
+
+.new_story .form .form_content .form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 18px;
+  color: #fff;
+  padding: 7px 0 5px;
+  background: transparent;
+  transition: border-color 0.2s
+}
+
+.new_story .form .form_content .form__field::placeholder {
+  color: transparent
+}
+
+.new_story .form .form_content .form__field:placeholder-shown~.form__label {
+  font-size: 18px;
+  cursor: text;
+  top: 30px
+}
+
+.new_story .form .form_content .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: #9b9b9b;
+  pointer-events: none
+}
+
+.new_story .form .form_content .form__field:focus {
+  padding-bottom: 6px;
+  border-image-slice: 1
+}
+
+.new_story .form .form_content .form__field:focus~.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px
+}
+
+.new_story .form .form_content .form__field:required,
+.new_story .form .form_content .form__field:invalid {
+  box-shadow: none
+}
+
+.new_story .form .form_content textarea {
+  box-sizing: border-box;
+  resize: none;
+  overflow: hidden
+}
+
+.new_story .form .form_content .checkbox {
+  margin-top: 25px
+}
+
+.new_story .form .form_content .checkbox_text {
+  line-height: 130%
+}
+
+.new_story .form .form_content .btn {
+  margin: 40px auto 20px;
+  display: block
+}
+
+.popup_wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box
+}
+
+.popup_wrapper .popup {
+  max-width: 500px;
+  padding: 30px;
+  background-color: white;
+  border: 2px solid #111111;
+  box-sizing: border-box
+}
+
+.popup_wrapper .popup_content {
+  line-height: 130%
+}
+
+.popup_wrapper .popup .btn {
+  margin: 20px auto 0;
+  display: block
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+.stories .stories-block {
+  margin-top: 80px
+}
+
+.stories .story {
+  padding: 15px;
+  border: 2px solid #111111;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin-top: 80px;
+  font-size: 18px;
+  line-height: 140%
+}
+
+@media screen and (max-width: 767px) {
+  .stories .story {
+    font-size: 16px
+  }
+}
+
+.stories .story:first-of-type {
+  margin-top: 0
+}
+
+.stories .story .text {
+  font-style: italic;
+  margin-bottom: 20px
+}
+
+.stories .story .show {
+  margin: 10px 0 20px;
+  font-style: italic;
+  font-weight: 600;
+  cursor: pointer
+}
+
+.stories .story .author {
+  border-top: 2px solid #111111;
+  padding: 15px 20px 0 0;
+  text-align: right;
+  font-style: italic;
+  font-weight: 600
+}
+
+.stories .story.right {
+  margin-left: auto
+}
+
+.stories .btn-wrap {
+  margin-top: 80px
+}
+
+@media screen and (max-width: 767px) {
+  .stories .btn-wrap {
+    margin-top: 40px
+  }
+}
+
+.pagination {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Proxima Nova';
+  font-size: 24px
+}
+
+.pagination span {
+  padding-right: 10px
+}
+
+.pagination span a {
+  color: #888888
+}
+
+.pagination span a:hover {
+  color: #111111
+}
+
+.pagination .page {
+  font-size: 18px
+}
+
+.pagination .page .current {
+  color: #111111
+}
+
+.error {
+  background: rgba(255, 0, 0, 0.15);
+  border: 1px solid red;
+  padding: 20px
+}
+
+.notice {
+  background: rgba(0, 255, 0, 0.15);
+  border: 1px solid green;
+  padding: 20px
+}
+
+body {
+  font-family: 'Proxima Nova';
+  color: #111111
+}
+
+header {
+  font-family: 'Wremena';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: white
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    padding: 20px
+  }
+
+  header .menu {
+    display: none
+  }
+}
+
+header * {
+  letter-spacing: 0.3em;
+  line-height: 24px;
+  font-weight: 700
+}
+
+header .logo a {
+  font-size: 24px;
+  color: white
+}
+
+@media screen and (max-width: 767px) {
+  header .logo a {
+    font-size: 18px
+  }
+}
+
+header .menu_item {
+  padding-left: 70px;
+  font-size: 16px;
+  color: white
+}
+
+@media screen and (max-width: 1024px) {
+  header .menu_item {
+    padding-left: 30px
+  }
+}
+
+footer .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper {
+    flex-direction: column
+  }
+}
+
+footer .content-wrapper>div {
+  margin-right: 40px
+}
+
+footer .content-wrapper>div:last-child {
+  margin-right: 0
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper>div {
+    margin-right: 0
+  }
+}
+
+footer .content-wrapper .text {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  line-height: 120%
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper .text {
+    font-size: 16px;
+    margin-bottom: 20px
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper .teatr_doc {
+    margin-bottom: 20px
+  }
+}
+
+footer .content-wrapper .teatr_doc_img {
+  width: 100%;
+  max-width: 120px
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper .opia {
+    margin-bottom: 20px
+  }
+
+  footer .content-wrapper .opia_img {
+    max-width: 70px
+  }
+}
+
+footer .content-wrapper .opia_img {
+  max-width: 100px;
+  width: 100%
+}
+
+footer .content-wrapper .postpictures_img {
+  max-width: 260px
+}
+
+@media screen and (max-width: 767px) {
+  footer .content-wrapper .postpictures_img {
+    max-width: 200px
+  }
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 20px
+}
+
+@media screen and (max-width: 767px) {
+  .content-wrapper {
+    padding: 80px 20px
+  }
+}
+
+a {
+  text-decoration: none
+}
+
+.first-screen {
+  background-image: url(bg.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center
+}
+
+@media screen and (max-width: 767px) {
+  .first-screen header {
+    display: none
+  }
+}
+
+.first-screen .text {
+  font-size: 90px;
+  letter-spacing: 0.34em;
+  color: white;
+  margin: 0 auto;
+  font-family: 'Wremena';
+  font-weight: bold
+}
+
+@media screen and (max-width: 767px) {
+  .first-screen .text {
+    font-size: 40px
+  }
+}
+
+.main_header {
+  font-family: 'Wremena';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #111111
+}
+
+@media screen and (max-width: 767px) {
+  .main_header {
+    font-size: 30px
+  }
+}
+
+p {
+  max-width: 750px;
+  margin: 0 auto 30px auto;
+  font-size: 18px;
+  line-height: 140%;
+  color: #111111
+}
+
+p a {
+  border-bottom: 1px dashed #111111;
+  color: inherit
+}
+
+p a:hover {
+  border-bottom: 1px solid #111111
+}
+
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 16px
+  }
+}
+
+.btn-wrap {
+  text-align: center
+}
+
+.btn {
+  color: #111111;
+  cursor: pointer;
+  font-family: 'Wremena';
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border: 2px solid #111111;
+  box-sizing: border-box;
+  padding: 20px 60px 15px;
+  display: inline-block;
+  background-color: transparent;
+  outline-color: inherit
+}
+
+@media screen and (max-width: 1000px) {
+  .btn {
+    font-size: 18px;
+    padding: 20px 40px 15px
+  }
+}
+
+.black-bg {
+  background: #2E2E2E
+}
+
+.black-bg p,
+.black-bg a {
+  color: white
+}
+
+.black-bg .btn {
+  border-color: white;
+  color: white
+}
+
+.black-bg .main_header {
+  color: white
+}
+
+.event .register {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px
+}
+
+@media screen and (max-width: 767px) {
+  .event .register {
+    align-items: baseline;
+    flex-direction: column;
+    margin-top: 50px
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .event .register .info_block {
+    margin-bottom: 25px
+  }
+}
+
+.event .register .line {
+  border-right: 2px solid #FFFFFF;
+  height: 70px;
+  margin: 0 15px
+}
+
+@media screen and (max-width: 767px) {
+  .event .register .line {
+    display: none
+  }
+}
+
+.event .register .title {
+  font-family: Wremena;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: white
+}
+
+@media screen and (max-width: 767px) {
+  .event .register .title {
+    margin-bottom: 5px
+  }
+}
+
+.event .register .info {
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+  line-height: 130%
+}
+
+@media screen and (max-width: 1000px) {
+  .event .register .info {
+    font-size: 16px
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .event .register .btn {
+    margin: 0 auto
+  }
+}
+
+.in_case_of p {
+  margin: 50px auto 0;
+  font-size: 16px
+}
+
+.in_case_of .links {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px auto 0;
+  max-width: 750px
+}
+
+.in_case_of .links a {
+  text-decoration: none;
+  border-bottom: 1px dashed #111111;
+  color: inherit
+}
+
+.in_case_of .links a:hover {
+  border-bottom: 1px solid #111111
+}
