@@ -862,7 +862,13 @@ p a:hover {
 
 .black-bg p,
 .black-bg a {
-  color: white
+  color: white;
+}
+.black-bg a {
+  border-bottom: 1px dashed white
+}
+.black-bg a:hover {
+  border-bottom: 1px solid white
 }
 
 .black-bg .btn {
